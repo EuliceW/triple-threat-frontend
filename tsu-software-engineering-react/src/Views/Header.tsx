@@ -38,6 +38,9 @@ function Header() {
                 <div className="navbar-start">
                     <a className="navbar-item" href="/">Home</a>
                     <a className="navbar-item" href="/about">About</a>
+                    <a className="navbar-item" href="/search">Search Client</a>
+                    <a className="navbar-item" href="/add-client">Add Client</a>
+                    <a className="navbar-item" href="/access-log">Access Log</a>
                 </div>
             </div>
         </nav>
