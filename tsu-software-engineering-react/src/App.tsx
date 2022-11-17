@@ -3,7 +3,7 @@ import About from "./Views/About";
 import Home from "./Views/Home";
 import SearchClient from "./Views/SearchClient";
 import AddClient from "./Views/AddClient";
-import AccessLog from "./Views/AccessLog";
+import AddInventory from "./Views/AddInventory";
 
 import React from "react";
 import {
@@ -21,7 +21,7 @@ function App() {
             <Route path="about" element={<About/>}></Route>
             <Route path="search" element={<SearchClient/>}></Route>
             <Route path="add-client" element={<AddClient/>}></Route>
-            <Route path="access-log" element={<AccessLog/>}></Route>
+            <Route path="add-inventory" element={<AddInventory/>}></Route>
           </Route>
         </Routes>
     </Router>
