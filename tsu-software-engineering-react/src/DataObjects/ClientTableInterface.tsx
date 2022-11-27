@@ -26,3 +26,14 @@ export async function getClientTable() {
 
     return response;
 }
+
+
+export async function getClientsFromDB() {
+    const response = await axios.get(
+      'http://localhost:8000/AbcClient',
+      {}
+    );
+
+    return response;
+}
+

@@ -1,10 +1,8 @@
 .input {
     display: flex;
     width: 90%;
-    /* position: relative; */
+    position: relative;
     align-items: center;
-    margin-bottom: 40px;
-    margin-left: -20px;
 }
 
 /* Characteristic the Search Box */

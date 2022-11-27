@@ -40,7 +40,9 @@ function Header() {
                     <a className="navbar-item" href="/about">About</a>
                     <a className="navbar-item" href="/search">Search Client</a>
                     <a className="navbar-item" href="/add-client">Add Client</a>
-                    <a className="navbar-item" href="/add-inventory">Add Inventory</a>
+                    <a className="navbar-item" href="/inventory">Inventory</a>
+                    {/* <a className="navbar-item" href="/add-inventory">Add Inventory</a> */}
+                    {/* <li><a className="navbar-item" href="/inventory">Inventory</a></li> */}
                 </div>
             </div>
         </nav>
