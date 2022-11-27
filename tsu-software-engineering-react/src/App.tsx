@@ -4,6 +4,7 @@ import Home from "./Views/Home";
 import SearchClient from "./Views/SearchClient";
 import AddClient from "./Views/AddClient";
 import AddInventory from "./Views/AddInventory";
+import Inventory from "./Views/Inventory";
 
 import React from "react";
 import {
@@ -22,6 +23,7 @@ function App() {
             <Route path="search" element={<SearchClient/>}></Route>
             <Route path="add-client" element={<AddClient/>}></Route>
             <Route path="add-inventory" element={<AddInventory/>}></Route>
+            <Route path="inventory" element={<Inventory/>}></Route>
           </Route>
         </Routes>
     </Router>
@@ -29,3 +31,5 @@ function App() {
 }
 
 export default App;
+
+

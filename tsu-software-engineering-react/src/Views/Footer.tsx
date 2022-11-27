@@ -10,6 +10,7 @@ function Footer() {
                     <li><a className="navbar-item" href="/search">Search Client</a></li>
                     <li><a className="navbar-item" href="/add-client">Add Client</a></li>
                     <li><a className="navbar-item" href="/add-inventory">Add Inventory</a></li>
+                    <li><a className="navbar-item" href="/inventory">Inventory</a></li>
                 </ul>
             </div>
         </footer>
