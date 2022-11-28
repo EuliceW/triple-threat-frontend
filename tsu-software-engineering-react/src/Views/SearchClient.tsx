@@ -110,16 +110,18 @@ export default function Main() {
     setClientTable();
   }, []);
   
-  const [todo, setTodo] = useState<string>("");
+  const [search, setSearch] = useState<string>("");
+  console.log(search);
 
   return (
     <>
       <span className="is-size-2 pb-6 has-text-weight-medium">Search Client</span>
+      {/* <span className="search_client">Search Client</span> */}
 
       {/* Search Bar */}
-      <div>
-        <InputField todo={todo} setTodo={setTodo} />
-      </div>
+      <section className="section" >
+        <InputField search={search} setSearch={setSearch} />
+      </section>
 
       {/* Client List */}
       <div className="box columns is-centered is-radiusless">
