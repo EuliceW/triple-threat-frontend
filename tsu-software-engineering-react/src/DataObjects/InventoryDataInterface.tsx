@@ -21,6 +21,17 @@ export interface InventoryTableJsonObject {
     max_item_capacity: Number
 }
 
+export interface ResourceTableJsonObject {
+
+    resource_type_id: Number,
+    type_name: String,
+    // created_by : "Initialized Data",
+    // created_date : "2022-11-14T11:39:42Z",
+    // modified_by : null,
+    // modified_date : null,
+    // is_deleted : 0
+}
+
 export interface StorageTableJsonObject {
 
     storage_type_id: Number,
@@ -54,9 +65,42 @@ export async function getInventory() {
     return response;
 }
 
+export async function addInventory(data: {
+    abc_client: Number,
+    storage_type: Number,
+    inventory_name: String,
+    max_item_capacity: Number
+}) {
+    console.log('addinventory', data)
+    const response = await axios.post(
+        'http://localhost:8000/Inventory',
+        data
+    );
+
+    return response;
+}
+
 export async function getClients() {
     const response = await axios.get(
-        'http://localhost:8040/clients',
+        'http://localhost:8000/AbcClient',
+        {}
+    );
+    // console.log('res', response)
+    return response;
+}
+
+export async function getResourceTypes() {
+    const response = await axios.get(
+        'http://localhost:8000/ResourceType',
+        {}
+    );
+
+    return response;
+}
+
+export async function getStorageTypes() {
+    const response = await axios.get(
+        'http://localhost:8000/StorageType',
         {}
     );
 
